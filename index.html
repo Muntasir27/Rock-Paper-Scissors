@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <audio id="sound" src="./assets/audio/backgroundSong.mp3" preload="auto" loop="loop">
+    </audio>
+    <audio id="numCount" src="./assets/audio/countDown.mp3" preload="auto">
+    </audio>
+    <audio id="btnClick" src="./assets/audio/btnClick.mp3" preload="auto">
+    </audio>
+    <audio id="winAudio" src="./assets/audio/win.wav" preload="auto">
+    </audio>
+    <audio id="loseAudio" src="./assets/audio/lose.mp3" preload="auto">
+    </audio>
+    <audio id="drawAudio" src="./assets/audio/draw.wav" preload="auto">
+    </audio>
+
+    <!-- Text -->
+    <div class="row expanded">
+        <div class="large-12 columns">
+            <img id="banner" src="./assets/img/banner.png" alt="Title">
+        </div>
+    </div>
+
+    <div class="row expanded">
+        <div class="small-4 medium-4 large-4 columns">
+            <h2 id= "myScore">User - 0</h2>
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <h2 id="roundsNum">Round - 0</h2>
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <h2 id= "computerScore">Computer - 0</h2>
+        </div>
+    </div>
+
+    <!-- Pics -->
+    <div class="row expanded">
+        <div class="small-4 medium-4 large-4 columns">
+            <div id="userResult">
+                <img src="assets/img/questionMark.png" alt="questionMark">
+            </div>
+        </div>
+        <div class="small-4 medium-4 large-4 columns">
+            <div>
+                <img  id="vs" src="assets/img/vs.png" alt="questionMark">
+                <p>Choose your hand!<p>
+                <div id="myBtns">
+
+                    <input id="rockBtn" class="button yourClass" type="image" src="assets/img/rockBtn.png" />
+                    <input id="paperBtn" class="button yourClass" type="image" src="assets/img/paperBtn.png" />
+                    <input id="scissorsBtn" class="button yourClass" type="image" src="assets/img/scissorsBtn.png" />
+
+                </div>
+            </div>
+        </div>
+        <div class="small-4 medium-4 large-4 columns">
+            <div id="computerResult">
+                <img src="assets/img/questionMark.png" alt="questionMark">
+            </div>
+        </div>
+    </div>
+
+    <div class="row expanded">
+        <div class="large-12 columns" id="audioTab">
+            <input id= "volume" type="range" value="50" min="0" max="100">
+            <img id="mute" src="assets/img/pauseAudio.png" alt="mute">
+        </div>
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+</body>
+
+</html>
